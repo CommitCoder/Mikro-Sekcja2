@@ -35,7 +35,12 @@ public class DemoApplication {
 
 		// 3 lesson if we don't create a dog sout from constructor will be performed anyway
 		// because of @Component - dog is created when spring wakes up and create a context
-			
+
+
+
+		// 4 lesson prototype is not created when spring context is waking up
+		// no sout from dog when prototype
+
 
 	}
 }
