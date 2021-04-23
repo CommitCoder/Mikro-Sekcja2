@@ -15,13 +15,13 @@ public class DemoApplication {
 	//1 First lesson ##################################
 		// Dog visible when has @Component annotation
 		// SINGLETON Dog is created with instatiation  - sout() ..... Creating a dog
-		Dog dog = context.getBean(Dog.class);
-		dog.setName("Reksio");
-		dog.sayHello();
-
-		Dog dog2= context.getBean(Dog.class);
-		dog2.sayHello();
-		System.out.println(dog2.getName());
+//		Dog dog = context.getBean(Dog.class);
+//		dog.setName("Reksio");
+//		dog.sayHello();
+//
+//		Dog dog2= context.getBean(Dog.class);
+//		dog2.sayHello();
+//		System.out.println(dog2.getName());
 
 
 
@@ -43,6 +43,17 @@ public class DemoApplication {
 		// 4 lesson prototype is not created when spring context is waking up
 		// no sout from dog when prototype
 
+
+		// 5 lesson  x2 time create a dog sout and getter gives null
+		//PROTOTYPE
+
+		Dog dog = context.getBean(Dog.class);
+		dog.setName("Reksio");
+		dog.sayHello();
+
+		Dog dog2= context.getBean(Dog.class);
+		dog2.sayHello();
+		System.out.println(dog2.getName());
 
 	}
 }
