@@ -15,11 +15,13 @@ public class DemoApplication {
 	//1 First lesson ##################################
 		// Dog visible when has @Component annotation
 		// SINGLETON Dog is created with instatiation  - sout() ..... Creating a dog
-//		Dog dog = context.getBean(Dog.class);
-//		dog.sayHello();
-//
-//		Dog dog2= context.getBean(Dog.class);
-//		dog2.sayHello();
+		Dog dog = context.getBean(Dog.class);
+		dog.setName("Reksio");
+		dog.sayHello();
+
+		Dog dog2= context.getBean(Dog.class);
+		dog2.sayHello();
+		System.out.println(dog2.getName());
 
 
 
