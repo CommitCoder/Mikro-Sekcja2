@@ -1,13 +1,16 @@
 package com.firstApp.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(value = "prototype")
 public class Dog {
     private Long id;
     private String name;
+
+    @Autowired
+    private Toy toy;
 
     public Dog() {
         System.out.println("Creating a dog");
@@ -15,6 +18,7 @@ public class Dog {
 
     public void sayHello(){
         System.out.println("Hello");
+        toy.play();
     }
 
     public Long getId() {
@@ -31,5 +35,13 @@ public class Dog {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Toy getToy() {
+        return toy;
+    }
+
+    public void setToy(Toy toy) {
+        this.toy = toy;
     }
 }

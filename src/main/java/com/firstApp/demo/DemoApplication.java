@@ -47,13 +47,22 @@ public class DemoApplication {
 		// 5 lesson  x2 time create a dog sout and getter gives null
 		//PROTOTYPE
 
+//		Dog dog = context.getBean(Dog.class);
+//		dog.setName("Reksio");
+//		dog.sayHello();
+//
+//		Dog dog2= context.getBean(Dog.class);
+//		dog2.sayHello();
+//		System.out.println(dog2.getName());
+
+
+
+		// 6 lesson injecting Toy to Dog
+
 		Dog dog = context.getBean(Dog.class);
-		dog.setName("Reksio");
 		dog.sayHello();
 
-		Dog dog2= context.getBean(Dog.class);
-		dog2.sayHello();
-		System.out.println(dog2.getName());
+
 
 	}
 }
