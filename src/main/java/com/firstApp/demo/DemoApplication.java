@@ -33,7 +33,9 @@ public class DemoApplication {
 //		System.out.println(dog2.getName()); // Reks
 
 
-		
+		// 3 lesson if we don't create a dog sout from constructor will be performed anyway
+		// because of @Component - dog is created when spring wakes up and create a context
+			
 
 	}
 }
